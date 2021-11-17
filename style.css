@@ -25,3 +25,20 @@ h1 {
 .Funnel {
     text-align: center;
 }
+
+.button {
+    background-color: beige;
+    border: none;
+    color: black;
+    text-align: center;
+    padding:15px;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: chocolate;
+
+}
