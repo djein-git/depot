@@ -1,0 +1,27 @@
+h1 {
+    font-family: Times;
+    font-size: 24pt;
+    text-align: center;
+
+  }
+
+.body {
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+.header {
+    background-color:beige;
+    align-items: center;
+}
+
+.header p {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.Funnel {
+    text-align: center;
+}
