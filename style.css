@@ -24,6 +24,7 @@ h1 {
 
 .Funnel {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .button {
@@ -41,4 +42,11 @@ h1 {
 .button:hover {
     background-color: chocolate;
 
+}
+
+.Footer {
+    padding: 50px;
+    background-color: grey;
+    text-align: center;
+    color:white;
 }
