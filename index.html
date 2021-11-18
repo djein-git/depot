@@ -58,6 +58,20 @@
     <div class="Footer">
         CECI EST UN FOOTER
     </div>
+    <script language="javascript">
+if (typeof gtag !== "undefined"){
+	tC.internalvars.caEventData = {
+		'page_url': #PAGE_URL#,
+		'page_path': #PAGE_PATH#,
+		'page_title': #PAGE_TITLE#
+	};
+	gtag('event', 'page_view', {
+	  'page_location': tC.internalvars.caEventData.page_url,
+	  'page_path': tC.internalvars.caEventData.page_path,
+	  'page_title': tC.internalvars.caEventData.page_title
+	});
+}
+</script>
     <script src="{{ container_URL }}"></script>
     <script src="{{ https://cdn.tagcommander.com/2674/uat/tc_ConverteoFormationecommerce_25.js }}"></script>
 </body>
