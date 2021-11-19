@@ -2,29 +2,16 @@
 
 <head>
     <title>Home Page</title>
-        <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T4KGX4H');</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-
-     <!-- CommandersAct script -->
-     <script type="text/javascript">
+    <!-- CommandersAct script -->
+    <script type="text/javascript">
         //<![CDATA[
         var tc_vars = {
-            env_template : 'content',
-            env_work : 'prod',
-            env_channel : 'd',
-            env_language : 'fr',
-            page_cat1 : 'MonSite',
-            page_cat2 : '{{Page_title}}',
-            page_cat3 : '',
-            page_name : 'HomePage',
-            page_error : ''
+            env_template: 'content',
+            env_work: 'prod',
+            env_channel: 'd',
+            env_language: 'fr',
+            page_cat1: 'MonSite',
+            page_cat2: window.location.hostname
         }
         //]]>
     </script>
@@ -32,11 +19,6 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4KGX4H"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <h1> Bienvenue sur mon site </h1>
     <div class="header">
         <p>C'est ici que je testerai tout et n'importe quoi </p>
@@ -53,7 +35,7 @@
     <div class="Funnel">
         <h2>Etape 1 de mon funnel de conversion</h2>
         <p>Pour le moment, je mettrai un maximum de boutons pour créer un funnel</p>
-       
+
         <a class="button" href="page1.html" target="_blank"><strong>BOUTON 1</strong></a>
 
         <h2>Etape 2 de mon funnel de conversion</h2>
@@ -61,46 +43,48 @@
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
-            <a class="button" href="page2.html" target="_blank"><strong>BOUTON 2</strong></a>
+        <a class="button" href="page2.html" target="_blank"><strong>BOUTON 2</strong></a>
 
         <h2>Etape 3 de mon funnel de conversion</h2>
 
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
-            <a class="button" href="form.html" target="_blank"><strong>BOUTON 3</strong></a>
+        <a class="button" href="form.html" target="_blank"><strong>BOUTON 3</strong></a>
     </div>
 
     <div class="Footer">
         CECI EST UN FOOTER
     </div>
     <script language="javascript">
-          window.dataLayer = window.dataLayer || [];
-        var gtag = function(){
-         dataLayer.push(arguments); };
-          gtag('js', new Date());
-          gtag('config', 'UA-213160630-1', {
+        window.dataLayer = window.dataLayer || [];
+        var gtag = function () {
+            dataLayer.push(arguments);
+        };
+        gtag('js', new Date());
+        gtag('config', 'UA-213160630-1', {
             send_page_view: false,
             'cookie_expires': 13 * 30 * 24 * 60 * 60,
             'cookie_update': false,
             'anonymize_ip': true,
             custom_map: { // nommage des custom dimensions
-              dimension47: "MonSite",
-              dimension16: "env_work"
+                dimension47: "MonSite",
+                dimension16: "env_work"
             }
-          });
-          gtag('set', {
+        });
+        gtag('set', {
             env_work: tc_vars.env_work,
             id_contact: tc_vars.id_contact
-          })
-          gtag('event', 'page_view', {
+        })
+        gtag('event', 'page_view', {
             page_path: tc_vars.page_name,
-            page_location : document.location.origin + document.location.pathname,
+            page_location: document.location.origin + document.location.pathname,
             'send_to': 'UA-213160630-1'
-          })
-        </script>
+        })
+    </script>
     <script src="{{ container_URL }}"></script>
-    <script type="text/javascript" src="https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js"></script>
 </body>
 
 </html>
