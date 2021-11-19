@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>One Page</title>
+    <title>Home Page</title>
         <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,15 +9,26 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T4KGX4H');</script>
     <!-- End Google Tag Manager -->
-	        <script>
-            window.tc_vars = Object.assign({}, window.tc_vars, {
-                env_template: "homepage",
-                env_work: "prod"
-            });
-        </script>
-        <script src="{{ https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js }}"></script
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+
+     <!-- CommandersAct script -->
+     <script type="text/javascript">
+        //<![CDATA[
+        var tc_vars = {
+            env_template : 'content',
+            env_work : 'prod',
+            env_channel : 'd',
+            env_language : 'fr',
+            page_cat1 : 'MonSite',
+            page_cat2 : '{{Page_title}}',
+            page_cat3 : '',
+            page_name : 'HomePage',
+            page_error : ''
+        }
+        //]]>
+    </script>
+
 </head>
 
 <body>
@@ -43,44 +54,28 @@
         <h2>Etape 1 de mon funnel de conversion</h2>
         <p>Pour le moment, je mettrai un maximum de boutons pour créer un funnel</p>
        
-        <a class="button" href="page1.html" onclick="dataLayer.push({
-            'event': 'Click-btn',
-          });"><strong>BOUTON 1</strong></a>
+        <a class="button" href="page1.html" target="_blank"></a><strong>BOUTON 1</strong></a>
 
         <h2>Etape 2 de mon funnel de conversion</h2>
 
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
-            <a class="button" href="page2.html"><strong>BOUTON 2</strong></a>
+            <a class="button" href="page2.html" target="_blank"><strong>BOUTON 2</strong></a>
 
         <h2>Etape 3 de mon funnel de conversion</h2>
 
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
-            <a class="button" href="form.html"><strong>BOUTON 3</strong></a>
+            <a class="button" href="form.html" target="_blank"><strong>BOUTON 3</strong></a>
     </div>
 
     <div class="Footer">
         CECI EST UN FOOTER
     </div>
-    <script language="javascript">
-if (typeof gtag !== "undefined"){
-	tC.internalvars.caEventData = {
-		'page_url': #PAGE_URL#,
-		'page_path': #PAGE_PATH#,
-		'page_title': #PAGE_TITLE#
-	};
-	gtag('event', 'page_view', {
-	  'page_location': tC.internalvars.caEventData.page_url,
-	  'page_path': tC.internalvars.caEventData.page_path,
-	  'page_title': tC.internalvars.caEventData.page_title
-	});
-}
-</script>
     <script src="{{ container_URL }}"></script>
-    <script src="{{ https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js }}"></script>
+    <script type="text/javascript" src="{{ https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js }}"></script>
 </body>
 
 </html>
