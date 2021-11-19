@@ -54,7 +54,7 @@
         <h2>Etape 1 de mon funnel de conversion</h2>
         <p>Pour le moment, je mettrai un maximum de boutons pour créer un funnel</p>
        
-        <a class="button" href="page1.html" target="_blank"></a><strong>BOUTON 1</strong></a>
+        <a class="button" href="page1.html" target="_blank"><strong>BOUTON 1</strong></a>
 
         <h2>Etape 2 de mon funnel de conversion</h2>
 
@@ -74,6 +74,31 @@
     <div class="Footer">
         CECI EST UN FOOTER
     </div>
+    <script language="javascript">
+          window.dataLayer = window.dataLayer || [];
+        var gtag = function(){
+         dataLayer.push(arguments); };
+          gtag('js', new Date());
+          gtag('config', 'UA-213160630-1', {
+            send_page_view: false,
+            'cookie_expires': 13 * 30 * 24 * 60 * 60,
+            'cookie_update': false,
+            'anonymize_ip': true,
+            custom_map: { // nommage des custom dimensions
+              dimension47: "MonSite",
+              dimension16: "env_work"
+            }
+          });
+          gtag('set', {
+            env_work: tc_vars.env_work,
+            id_contact: tc_vars.id_contact
+          })
+          gtag('event', 'page_view', {
+            page_path: tc_vars.page_name,
+            page_location : document.location.origin + document.location.pathname,
+            'send_to': 'UA-213160630-1'
+          })
+        </script>
     <script src="{{ container_URL }}"></script>
     <script type="text/javascript" src="{{ https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js }}"></script>
 </body>
