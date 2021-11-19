@@ -10,7 +10,7 @@
             env_work: 'prod',
             env_language: 'fr',
             page_cat: 'Home',
-            page_name: window.location.page_name
+            page_name: window.location.pathname
         }
         //]]>
     </script>
@@ -83,7 +83,9 @@
             'send_to': 'UA-213160630-1'
         })
     </script>
-    <script src="{{ container_URL }}"></script>
+   
+   <!-- Tag Co Script avec mon {{container_URL}} -->
+
     <script type="text/javascript"
         src="https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js"></script>
 </body>
