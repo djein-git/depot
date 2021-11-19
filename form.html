@@ -9,13 +9,9 @@
         var tc_vars = {
             env_template : 'content',
             env_work : 'prod',
-            env_channel : 'd',
             env_language : 'fr',
-            page_cat1 : 'MonSite',
-            page_cat2 : 'FormPage',
-            page_cat3 : '',
-            page_name : 'Form',
-            page_error : ''
+            page_cat : 'FormPage',
+            page_name : window.location.page_name
         }
         //]]>
     </script>
@@ -43,4 +39,7 @@
         </div>
         <a class="button" href="index.html"><strong>Soumettre</strong></a>
     </form>
+    <script src="{{ container_URL }}"></script>
+    <script type="text/javascript"
+        src="https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js"></script>
     </body>

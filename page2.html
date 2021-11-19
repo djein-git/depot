@@ -9,13 +9,9 @@
                 var tc_vars = {
                     env_template : 'content',
                     env_work : 'prod',
-                    env_channel : 'd',
                     env_language : 'fr',
-                    page_cat1 : 'MonSite',
-                    page_cat2 : 'Category_Page',
-                    page_cat3 : '',
-                    page_name : 'Page2',
-                    page_error : ''
+                    page_cat : 'MonSite',
+                    page_name : window.location.page_name
                 }
                 //]]>
             </script>
@@ -25,5 +21,7 @@
 <body>
 
     <h1> Et de 2 </h1>
-
+    <script src="{{ container_URL }}"></script>
+    <script type="text/javascript"
+        src="https://cdn.tagcommander.com/2674/tc_ConverteoFormationecommerce_25.js"></script>
     </body>
