@@ -127,16 +127,32 @@ h1 {
 
 .form .corps-form .right .groupe{
     height: 100%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
 }
 .form .corps-form .right .groupe textarea{
-    margin-top: 20px;
+    margin-top: 5px;
+    padding: 10px;
     flex-direction: column;
     border-radius: 5px;
-    outline-color:rgb(238, 143, 0);
+    background-color: #f8f8f8;
+    border: 2px solid rgb(238, 143, 0);
+    outline: none;
+    resize: none; 
 }
 
-
-.btnForm { 
+.btnForm .button { 
     margin-top: 20px;
+    background-color: rgb(238, 143, 0)!important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: transform 0.5s;
+}
+
+.btnForm .button:hover{
+    transform: scale(1.05);
+
 }
