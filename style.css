@@ -50,9 +50,10 @@ h1 {
 
 .footer {
     padding: 50px;
-    background-color: grey;
+    background-color: rgb(248, 233, 233);
     text-align: center;
-    color:white;
+    color:grey;
+    height: 200px;
 }
 
 #Menu
@@ -63,14 +64,6 @@ h1 {
     margin-right: auto; 
     margin-top: 20px; 
     border-radius: 20px;
-}
-
-#M_1, #M_2, #M_3, #M_4 {
-
-    text-align: center; 
-    width: 20%; 
-    border: 1px;
-    text-decoration: none;
 }
 
 .form {
@@ -212,7 +205,7 @@ nav a:hover {
     height: 400px;
     background-repeat: no-repeat;
     margin-bottom: 15px;
-
+    margin-top: 15px;
 }
 
 .box p {
